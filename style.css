@@ -1,0 +1,210 @@
+
+  /* Updated CSS with Osems Fonts */
+  body {
+    font-family: 'Roboto', Arial, sans-serif; /* Osems Font Library का उपयोग */
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+  }
+  h1{
+    font-size: 35px;
+  }
+  
+  header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #353542;
+    font-family: 'Roboto', sans-serif; /* Header के लिए फॉन्ट */
+  }
+  
+  main {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif; /* Main Content के लिए फॉन्ट */
+  }
+  
+  #add-note {
+    padding: 20px 20px ;
+    padding-bottom: 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* बटन के लिए फॉन्ट */
+  }
+  
+  #notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 155px;
+  
+  }
+  
+  
+  .note {
+    width: 400px;
+    background-color: #fff;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    font-family: 'Roboto', sans-serif; /* नोट्स के लिए फॉन्ट */
+   
+  }
+   #theme-icon{
+    border-radius: 50%;
+   }
+   #theme-icon :hover{
+    background-color: black ;
+   }
+  
+  .note textarea {
+    width: 100%;
+    height: 250px;
+    font-size: 14px;
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    resize: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif; /* टेक्स्ट एरिया के लिए फॉन्ट */
+    
+  }
+  
+  .note .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  button {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* सभी बटन के लिए फॉन्ट */
+  }
+  
+  body.dark {
+    background-color: #1a1515;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body.dark .note {
+    background-color: #1a1515;
+    border-color: 10px solid hsl(258, 86%, 69%);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #theme-toggle {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: #007bff;
+    transition: background 0.3s, color 0.3s;
+    font-size: 20px;
+    font-weight: 5px;
+  }
+  
+  #theme-toggle:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  #theme-icon-container {
+    width: 30px;
+    height: 30px;
+    background-color: #fafcff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    transition: background 0.3s;
+  }
+  
+  #theme-icon {
+    font-size: 18px;
+    color: white;
+  }
+
+  
+  #theme-toggle:hover #theme-icon-container {
+    background-color: white;
+  }
+  
+  #theme-toggle:hover #theme-icon {
+    color: #000001;
+  }
+
+  i {
+  font-size: 20px;
+  color: #000;
+  }
+
+  i :hover{
+  color:rgb(255, 68, 0);
+  }
+
+  
+  .color-picker {
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .font-family-dropdown {
+    position: absolute;
+    z-index: 1000;
+    font-size: 14px;
+    margin-top: 1px;
+    display:inline;
+    margin-right: 50px;
+    padding-left: 8px; 
+    width: 10px;
+  }
+
+
+  /* Light Mode Styles */
+body.light-mode {
+  background-color: #fff;
+  color: #000;
+}
+
+header.light-mode {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+header.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Add transition effect for smooth switching */
+body, header {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+textarea {
+  overflow-y: auto;
+}
+
+.font-family-select{
+  width: 50px;
+}
